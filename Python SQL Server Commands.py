@@ -3,8 +3,6 @@ import pandas as pd
 import pyodbc # lib to connect to ODBC DB's
 
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 #Create a connection to database & validating connection
 
 # One way to connect - default instance & windows authentication
@@ -35,10 +33,6 @@ print()
 
 # Second way _ named instance 
 #conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server}; SERVER=putservername/putinstancename;Database=put database name;Trusted_Connection=yes;')
-
-
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 #Connect, run query close cursor and connection
 
@@ -78,7 +72,6 @@ except pyodbc.Error as ex:
 
 print()
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Running a simple query and printing results on screen
 
@@ -114,8 +107,6 @@ except pyodbc.Error as ex:
 
 print()
 
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Run Select and load to dataframe
 
